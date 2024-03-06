@@ -1,4 +1,4 @@
-# Discord Honeypot System
+# Discord Honeypot System - CONCEPT
 
 ## Overview
 
