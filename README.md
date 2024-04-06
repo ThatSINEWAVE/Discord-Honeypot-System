@@ -1,10 +1,16 @@
-# Discord Honeypot System - CONCEPT
+<div align="center">
 
-## Overview
+# Discord Honeypot System - CONCEPT
 
 The Discord Honeypot System is a sophisticated monitoring tool designed to enhance server security and moderation efficiency. Utilizing multiple Discord accounts, each running in dedicated Virtual Machines (VMs) or Docker containers, this Python-based system automates the surveillance of direct message (DM) activity. Its primary objective is to detect, capture, and relay suspicious or unwanted DM communications to a specific channel within a designated server for further action by the moderation team.
 
+</div>
+
+<div align="center">
+
 ## ☕ [Support my work on Ko-Fi](https://ko-fi.com/thatsinewave)
+
+</div>
 
 ## Key Features
 
