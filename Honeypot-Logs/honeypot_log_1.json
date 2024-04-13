@@ -1,0 +1,20 @@
+[
+    {
+        "time": "2024-03-06 16:47:25.158000+00:00",
+        "from": {
+            "id": "USER_ID",
+            "name": "USERS_NICKNAME#0",
+            "avatar_url": "USERS_AVATAR_LINK"
+        },
+        "message": "Test"
+    },
+    {
+        "time": "2024-03-06 17:11:47.522000+00:00",
+        "from": {
+            "id": "USER_ID",
+            "name": "USERS_NICKNAME#0",
+            "avatar_url": "USERS_AVATAR_LINK"
+        },
+        "message": "TEST DM"
+    }
+]
