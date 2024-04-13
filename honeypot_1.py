@@ -6,20 +6,34 @@ import os
 import requests
 from discord.ext import commands
 from discord.enums import ActivityType
+import time
 
 
-def load_config(file_name):
+def HONEYPOT_1():
+    print("[HONEYPOT_1] Establishing connection to bot_instance...")
+    time.sleep(0.2)
+    print("[HONEYPOT_1] Connection established to bot_instance.")
+    time.sleep(0.5)
+
+
+def load_token_config(file_name):
     with open(os.path.join('Tokens', file_name), 'r') as f:
-        print(f"[HONEYPOT_1] Config {file_name} was loaded.")
+        print(f"[HONEYPOT_4] Config {file_name} was loaded.")
         return json.load(f)
 
 
-pronouns = load_config('Database/pronouns.json')  # Not directly used in this example
-names = load_config('Database/nicknames.json')
-images = [os.path.join('Database', 'images', img) for img in load_config('images.json')]
-statuses = load_config('Database/status.json')
-bios = load_config('Database/about_me.json')  # Added for bio updates
-token_data = load_config('token_1.json')
+def load_database(file_name):
+    with open(os.path.join('Database', file_name), 'r') as f:
+        print(f"[HONEYPOT_4] Config {file_name} was loaded.")
+        return json.load(f)
+
+
+pronouns = load_database('pronouns.json')  # Not directly used in this example
+names = load_database('nicknames.json')
+images = [os.path.join('Database', 'images', img) for img in load_database('images.json')]
+statuses = load_database('status.json')
+bios = load_database('about_me.json')  # Added for bio updates
+token_data = load_token_config('token_2.json')
 
 # Bot setup
 intents = discord.Intents.default()
@@ -110,7 +124,7 @@ async def on_message(message):
             },
             "message": message.content
         }
-        logs_path = os.path.join('Honeypot-Logs', "honeypot_dm_logs_1.json")
+        logs_path = os.path.join('Honeypot-Logs', "honeypot_dm_logs_2.json")
 
         # Load existing logs or initialize an empty list
         if os.path.exists(logs_path) and os.path.getsize(logs_path) > 0:
