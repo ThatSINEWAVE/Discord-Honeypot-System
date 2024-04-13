@@ -24,7 +24,7 @@ The Discord Honeypot System is a sophisticated monitoring tool designed to enhan
 - `controller.py`: This is the main script that starts and monitors the honeypot instances.
 - `honeypot_1.py` to `honeypot_6.py`: These are honeypot instance scripts.
 - `Tools folder`: Includes generator scripts to create fake data for each honeypot instance based on the `wordlist.txt` file.
-- `wordlist.txt`: The generator scripts use this file to generate randomized usernames and nicknames for the honeypot accounts. This ensures a diverse range of profile names for increased authenticity, the file is sourced from [usernames.txt](https://github.com/jeanphorn/wordlist/blob/master/usernames.txt) and all the credit for it goes to the original creator.
+- `wordlist.txt`: The generator scripts use this file to generate randomized usernames and nicknames for the honeypot accounts.
 - `Honeypot-Logs folder`: Contains log files for each honeypot instance: `honeypot_log_1.json` to `honeypot_log_6.json`.
 - `Tokens folder`: Contains tokens and IDs for each honeypot instance: `token_1.json` to `token_6.json`.
 - `Database folder`: Contains profile images and configuration files for each honeypot instance.
@@ -62,6 +62,11 @@ Each honeypot instance file, such as `honeypot_1.py` to `honeypot_6.py`, serves 
 5. **Logging and Reporting:** Captured DMs are logged into designated log files while also being reported to specified channels for real-time monitoring by moderation teams.
 
 These scripts are essential components of the Discord Honeypot System, working in tandem with the controller script to create a comprehensive monitoring and detection framework. By simulating authentic user interactions while actively monitoring DM activity, these honeypot instances contribute significantly to server security and moderation efforts.
+
+## Credits
+
+- wordlist.txt - this is a renamed version of the [usernames.txt](https://github.com/jeanphorn/wordlist/blob/master/usernames.txt) by @jeanphorn
+- profile images - all 1000 profile images have been sourced from [pfps.gg](https://pfps.gg/)
 
 ## Warning
 
