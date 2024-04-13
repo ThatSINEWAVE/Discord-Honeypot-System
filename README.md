@@ -19,16 +19,49 @@ The Discord Honeypot System is a sophisticated monitoring tool designed to enhan
 - **Dynamic Profile Customization:** Honeypot accounts can change their profile picture, username, nickname, about me section, pronouns, profile background color, status, and rich presence at user-defined intervals to maintain a low profile and attract different target groups.
 - **Scalability:** Designed to efficiently scale from a few accounts to more than 10, ensuring adaptability to various operation sizes.
 
+## Structure
+
+- `controller.py`: This is the main script that starts and monitors the honeypot instances.
+- `honeypot_1.py` to `honeypot_6.py`: These are honeypot instance scripts.
+- `Tools folder`: Includes generator scripts to create fake data for each honeypot instance based on the `wordlist.txt` file.
+- `wordlist.txt`: The generator scripts use this file to generate randomized usernames and nicknames for the honeypot accounts. This ensures a diverse range of profile names for increased authenticity, the file is sourced from [usernames.txt](https://github.com/jeanphorn/wordlist/blob/master/usernames.txt) and all the credit for it goes to the original creator.
+- `Honeypot-Logs folder`: Contains log files for each honeypot instance: `honeypot_log_1.json` to `honeypot_log_6.json`.
+- `Tokens folder`: Contains tokens and IDs for each honeypot instance: `token_1.json` to `token_6.json`.
+- `Database folder`: Contains profile images and configuration files for each honeypot instance.
+
 ## Capabilities
 
-The system's honeypot bots are equipped with the following customization abilities to enhance their effectiveness and remain undetectable:
+The system's honeypot bots are equipped with various customization abilities to enhance their effectiveness and remain undetectable. Additionally, the new controller.py script manages and monitors the honeypot instances.
 
 1. **Profile Picture:** Randomly changes from a list of 1,000 curated images.
-2. **Username & Nickname:** Randomly changes from a list of 10,000 curated names.
-3. **About Me & Pronouns Sections:** Randomly changes from a list of 10,000 curated texts.
-4. **Profile Background Color:** Randomly selects from a wide range of color values.
-5. **Status Updates:** Switches between online, away, do not disturb, and offline statuses.
-6. **Rich Presence:** Simulates activity such as playing a game from a list of 100 curated titles.
+2. **Username & Nickname:** Randomly changes from a list of 10,000 curated usernames and nicknames.
+3. **About Me Sections:** Randomly changes from a list of 10,000 curated texts.
+4. **Pronouns Sections:** Randomly changes from a list of 1,000 curated texts.
+5. **Profile Background Color:** Randomly selects from a wide range of color values.
+6. **Status Updates:** Switches between online, away, do not disturb, and offline statuses.
+7. **Rich Presence:** Simulates activity such as playing a game from a list of 100 curated titles (Not finished).
+
+## Documentation for Honeypot Instance Files
+
+Each honeypot instance file, such as `honeypot_1.py` to `honeypot_6.py`, serves as a standalone script responsible for simulating user behavior, monitoring direct messages (DMs), and maintaining a low-profile presence within Discord servers. Here's an overview of the functionality and structure of these files:
+
+### Functionality:
+
+1. **Connection Establishment:** Each script initiates a connection to Discord's API to enable interaction with servers and users.
+2. **Configuration Loading:** Configuration files, such as tokens and profile data, are loaded to customize the behavior and appearance of the honeypot accounts.
+3. **Profile Customization:** Honeypot accounts dynamically change their profile elements, including username, nickname, avatar, bio, and status, to emulate genuine user activity.
+4. **DM Monitoring:** The scripts continuously monitor DM activity, capturing relevant information such as sender details, message contents, and timestamps.
+5. **Logging:** Detected DMs and relevant information are logged into designated log files for further analysis and review.
+
+### Structure:
+
+1. **Initialization:** The script begins by establishing connections and loading necessary configurations.
+2. **Profile Setup:** Initial profile customization, including setting usernames, avatars, and statuses, is performed to ensure variability and authenticity.
+3. **Asynchronous Tasks:** Async tasks are created to handle profile updates and status changes at randomized intervals, mimicking natural user behavior.
+4. **Message Handling:** The script includes event handlers to intercept and process incoming DMs, extracting relevant information and logging them accordingly.
+5. **Logging and Reporting:** Captured DMs are logged into designated log files while also being reported to specified channels for real-time monitoring by moderation teams.
+
+These scripts are essential components of the Discord Honeypot System, working in tandem with the controller script to create a comprehensive monitoring and detection framework. By simulating authentic user interactions while actively monitoring DM activity, these honeypot instances contribute significantly to server security and moderation efforts.
 
 ## Warning
 
