@@ -65,8 +65,8 @@ These scripts are essential components of the Discord Honeypot System, working i
 
 ## Credits
 
-- wordlist.txt - this is a renamed version of the [usernames.txt](https://github.com/jeanphorn/wordlist/blob/master/usernames.txt) by @jeanphorn
-- profile images - all 1000 profile images have been sourced from [pfps.gg](https://pfps.gg/)
+- [usernames.txt](https://github.com/jeanphorn/wordlist/blob/master/usernames.txt) - used as the wordlist.txt for the generators.
+- [pfps.gg](https://pfps.gg/) - source of all 1000 profile images.
 
 ## Warning
 
