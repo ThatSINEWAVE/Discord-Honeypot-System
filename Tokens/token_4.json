@@ -1,0 +1,5 @@
+{
+    "token": "YOUR_TOKEN_HERE",
+    "guild_id": "YOUR_GUILD_ID_HERE",
+    "channel_id": "YOUR_LOGGING_CHANNEL_HERE"
+}
