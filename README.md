@@ -23,9 +23,10 @@ The Discord Honeypot System is a sophisticated monitoring tool designed to enhan
 
 - `controller.py`: This is the main script that starts and monitors the honeypot instances.
 - `honeypot_1.py` to `honeypot_6.py`: These are honeypot instance scripts.
-- `Tools folder`: Includes generator scripts to create fake data for each honeypot instance.
-- `Honeypot-Logs folder`: Contains log files for each honeypot instance: honeypot_log_1.json to honeypot_log_6.json.
-- `Tokens folder`: Contains tokens and IDs for each honeypot instance: token_1.json to token_6.json.
+- `Tools folder`: Includes generator scripts to create fake data for each honeypot instance based on the `wordlist.txt` file.
+- `wordlist.txt`: The generator scripts use this file to generate randomized usernames and nicknames for the honeypot accounts. This ensures a diverse range of profile names for increased authenticity, the file is sourced from [usernames.txt](https://github.com/jeanphorn/wordlist/blob/master/usernames.txt) and all the credit for it goes to the original creator.
+- `Honeypot-Logs folder`: Contains log files for each honeypot instance: `honeypot_log_1.json` to `honeypot_log_6.json`.
+- `Tokens folder`: Contains tokens and IDs for each honeypot instance: `token_1.json` to `token_6.json`.
 - `Database folder`: Contains profile images and configuration files for each honeypot instance.
 
 ## Capabilities
