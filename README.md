@@ -29,6 +29,12 @@ The Discord Honeypot System is a sophisticated monitoring tool designed to enhan
 - `Tokens folder`: Contains tokens and IDs for each honeypot instance: `token_1.json` to `token_6.json`.
 - `Database folder`: Contains profile images and configuration files for each honeypot instance.
 
+<div align="center">
+
+# [Join my discord server](https://discord.gg/2nHHHBWNDw)
+
+</div>
+
 ## Capabilities
 
 The system's honeypot bots are equipped with various customization abilities to enhance their effectiveness and remain undetectable. Additionally, the new controller.py script manages and monitors the honeypot instances.
