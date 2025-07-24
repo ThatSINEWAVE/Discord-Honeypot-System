@@ -31,7 +31,7 @@ The Discord Honeypot System is a sophisticated monitoring tool designed to enhan
 
 <div align="center">
 
-# [Join my discord server](https://discord.gg/2nHHHBWNDw)
+# [Join my discord server](https://thatsinewave.github.io/Discord-Redirect/)
 
 </div>
 
